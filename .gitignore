@@ -78,3 +78,12 @@ apps/ejabberd/ebin/ejabberd.app
 dev/*
 test/*
 ebin/
+
+.vagrant/*
+*.box
+# We want to control our configs (although they are generated)
+!rel/mongooseim/etc/*
+!rel/mongooseim/etc/ejabberd.cfg
+!rel/mongooseim/files/*
+!rel/*.config
+!*.conf
